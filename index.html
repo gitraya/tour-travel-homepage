@@ -9,14 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Mulish:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
-<body>
+<body class="flex column">
     <header>
         <nav class="flex row">
             <div class="nav-container flex row">
-                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="20.5" cy="20.5" r="20.5" fill="#1ABE84"/>
-                    <circle cx="20.5" cy="20.5" r="9" fill="#FB8F1D" stroke="white" stroke-width="3"/>
-                </svg> 
+                <img src="./assets/logo.svg" alt="logo">
             </div>
             <div class="nav-container flex row">
                 <a class="cl-xb ft-md nav-link" href="">Home</a>
@@ -30,5 +27,34 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section class="section one flex row">
+            <div class="content-container flex column">
+                <h1 class="ft-playfair cl-xb ft-64">Explore and Travel</h1>
+                <form action="">
+                    <h2 class="ft-inter cl-xb ft-md ft-22">Holiday Finder</h2>
+                    <hr class="hr-one">
+                    <div class="form-control">
+                        <select name="location" id="location">
+                            <option value="" disabled selected>Location</option>
+                        </select>
+                        <select name="activity" id="activity">
+                            <option value="" disabled selected>Activity</option>
+                        </select>
+                        <select name="grade" id="grade">
+                            <option value="" disabled selected>Grade</option>
+                        </select>
+                        <select name="date" id="date">
+                            <option value="" disabled selected>Date</option>
+                        </select>
+                    </div>
+                    <input class="btn-cta" type="submit" value="Explore">
+                </form>
+            </div>
+            <div class="content-container">
+                <div class="img-container"><img src="./assets/herofinder.svg" alt="herofinder"></div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
