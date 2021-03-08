@@ -7,6 +7,7 @@
     <title>Tour and Travel</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Mulish:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body class="flex column">
@@ -27,34 +28,47 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="section one flex row">
+    <main class="flex column">
+        <section class="section one grid">
             <div class="content-container flex column">
                 <h1 class="ft-playfair cl-xb ft-64">Explore and Travel</h1>
                 <form action="">
                     <h2 class="ft-inter cl-xb ft-md ft-22">Holiday Finder</h2>
                     <hr class="hr-one">
-                    <div class="form-control">
-                        <select name="location" id="location">
-                            <option value="" disabled selected>Location</option>
-                        </select>
-                        <select name="activity" id="activity">
-                            <option value="" disabled selected>Activity</option>
-                        </select>
-                        <select name="grade" id="grade">
-                            <option value="" disabled selected>Grade</option>
-                        </select>
-                        <select name="date" id="date">
-                            <option value="" disabled selected>Date</option>
-                        </select>
+                    <div class="form-control-select grid">
+                        <div class="select-control-styled">
+                            <i class="fas fa-angle-down cl-bd"></i>
+                            <select class="ft-inter cl-bd ft-16" name="location" id="location">
+                                <option value="" disabled selected>Location</option>
+                            </select>
+                        </div>
+                        <div class="select-control-styled">
+                            <i class="fas fa-angle-down cl-bd"></i>
+                            <select class="ft-inter cl-bd ft-16"  name="activity" id="activity">
+                                <option value="" disabled selected>Activity</option>
+                            </select>
+                        </div>
+                        <div class="select-control-styled">
+                            <i class="fas fa-angle-down cl-bd"></i>
+                            <select class="ft-inter cl-bd ft-16"  name="grade" id="grade">
+                                <option value="" disabled selected>Grade</option>
+                            </select>
+                        </div>
+                        <div class="select-control-styled">
+                            <i class="fas fa-angle-down cl-bd"></i>
+                            <select class="ft-inter cl-bd ft-16"  name="date" id="date">
+                                <option value="" disabled selected>Date</option>
+                            </select>
+                        </div>
                     </div>
-                    <input class="btn-cta" type="submit" value="Explore">
+                    <input class="btn-cta register ft-16 ft-bd focus-btn" type="submit" value="Explore">
                 </form>
             </div>
-            <div class="content-container">
-                <div class="img-container"><img src="./assets/herofinder.svg" alt="herofinder"></div>
+            <div class="content-container flex column">
+                <div class="img-container flex column"><img src="./assets/herofinder.svg" alt="herofinder"></div>
             </div>
         </section>
+        <section></section>
     </main>
 </body>
 </html>
