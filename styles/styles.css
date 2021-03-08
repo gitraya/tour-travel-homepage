@@ -35,12 +35,16 @@ a:active {color: inherit;} */
 .ft-12 {font-size: 0.75rem;}
 .ft-16 {font-size: 1rem;}
 .ft-22 {font-size: 1.375rem;}
+.ft-36 {font-size: 2rem;}
 .ft-64 {font-size: 4rem;}
 .ft-md {font-weight: 500;}
 .ft-bd {font-weight: 700;}
+.ft-lh-30 {line-height: 30px;}
 .cl-bd {color: var(--bold);}
+.cl-sb {color: var(--semi-bold);}
 .cl-xb {color: var(--extra-bold);}
 .cl-xl {color: var(--extra-light);}
+.mx-1 {margin: 1rem 0;}
 .flex.row {display: flex; flex-flow: row wrap;}
 .flex.column {display: flex; flex-flow: column wrap;}
 .grid {display: grid;}
@@ -49,7 +53,7 @@ button, input, select, a {cursor: pointer;}
 /* Navigation section */
 nav {
     max-width: 100%;
-    height: 5rem;
+    height: 6rem;
 }
 
 .nav-container {
@@ -97,11 +101,13 @@ nav {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
 }
 
+.btn-cta.cta {width: 160px;}
+
 /* Section One */
 .section {
     max-width: 100%;
     height: auto;
-    margin: 1.5rem 0;
+    margin: 1.6rem 0;
 }
 
 .section.one {
@@ -109,13 +115,13 @@ nav {
     column-gap: 2rem;
 }
 
-.content-container:nth-of-type(2), .img-container {
+.content-container.hero-image, .img-container {
     justify-content: flex-end;
     align-items: center;
 }
 
 .img-container img {
-    max-width: 90%;
+    max-width: 100%;
     height: 100%;
 }
 
@@ -160,3 +166,18 @@ form h1 {margin-right: 30%;}
     right: 1.5rem;
     transform: translateY(-50%);
 }
+
+/* Section two */
+.section.two {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin: 4rem 0;
+}
+
+.content-container.my {margin: auto 15%;}
+
+.img-container.two img {
+    max-width: 100%;
+    height: 100%;
+}
+
