@@ -174,7 +174,7 @@ form h1 {margin-right: 30%;}
 }
 
 /* Section two */
-.section.two {
+.section.two, section.four {
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
     margin: 4rem 0;
@@ -188,7 +188,7 @@ form h1 {margin-right: 30%;}
 }
 
 /* Section three */
-.section.three {margin: 4rem 5%;}
+.section.three, .section.four {margin: 4rem 5%;}
 .head-content {
     align-items: center;
     justify-content: space-between;
@@ -218,3 +218,10 @@ form h1 {margin-right: 30%;}
     border-top-right-radius: 6px;
     background-color: #FFF;
 }
+
+/* Section four */
+.content-container.m {
+    margin: auto 15% auto 0 ;
+}
+
+/* Section five */
