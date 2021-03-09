@@ -52,6 +52,7 @@ a:active {color: inherit;} */
 .my-32 {margin: 2rem 0;}
 .mx-1 {margin: 1rem 0;}
 .mx-10 {margin: 1rem 0 0.625rem;}
+.mb-0 {margin-bottom: 0;}
 .bd-rd-6 {border-radius: 6px;}
 .bd-rd-8 {border-radius: 8px;}
 .flex.row {display: flex; flex-flow: row wrap;}
@@ -190,7 +191,7 @@ form h1 {margin-right: 30%;}
 }
 
 /* Section three */
-.section.three, .section.four, .section.five {margin: 4rem 5%;}
+.section.three, .section.four, .section.five, .section.six {margin: 4rem 5%;}
 .head-content {
     align-items: center;
     justify-content: space-between;
@@ -227,6 +228,11 @@ form h1 {margin-right: 30%;}
 }
 
 /* Section five */
+.myslide {display: none;}
+.myslide.active {display: grid;}
+.card-item-container {
+    position: relative;
+}
 .testi-card-item {
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
@@ -234,7 +240,6 @@ form h1 {margin-right: 30%;}
 
 .person-picture {
     justify-self: flex-end;
-    position: relative;
 }
 
 .btn-control-container {
@@ -248,5 +253,25 @@ form h1 {margin-right: 30%;}
     border-top-left-radius: 8px;
 }
 
-.btn-move {color: var(--extra-bold);}
+.btn-move {stroke: var(--extra-bold);}
 .btn-move.mr {margin-right: 1rem;}
+
+.nextBtn.off svg, .prevBtn.off svg {
+    cursor: default;
+    stroke: var(--light);
+}
+
+/* Section six */
+.card-container.blog .card-item {cursor: default;}
+.img-blog {
+    width: 100%;
+    height: 15rem;
+    border-radius: 8px 8px 0 0;
+    object-position: top;
+    object-fit: cover;
+}
+
+.desc-blog {height: 12rem;}
+.desc-blog a {margin-top: auto;}
+
+/* Footer */
