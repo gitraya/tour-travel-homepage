@@ -25,6 +25,26 @@ body {
     font-family: var(--mulish);
 }
 
+@media screen and (max-width: 5000px) and (min-width: 2460px) {
+    body {margin: 0 25%;}
+}
+
+@media screen and (max-width: 2460px) and (min-width: 2360px) {
+    body {margin: 0 23%;}
+}
+
+@media screen and (max-width: 2360px) and (min-width: 2060px) {
+    body {margin: 0 20%;}
+}
+
+@media screen and (max-width: 2060px) and (min-width: 1960px) {
+    body {margin: 0 18%;}
+}
+
+@media screen and (max-width: 1960px) and (min-width: 1760px) {
+    body {margin: 0 13%;}
+}
+
 a {text-decoration: none;}
 /* a:link {color: inherit}
 a:visited {color: inherit;}
@@ -80,11 +100,6 @@ nav {
 .nav-link:hover {
     color: var(--extra-bold); 
     font-weight: 500;
-}
-
-.nav-cta {
-    width: calc(100% - 58%);
-    justify-content: space-between;
 }
 
 .btn-cta {
@@ -203,6 +218,7 @@ form h1 {margin-right: 30%;}
 .fa-angle-right {margin-left: 0.5rem;}
 
 .card-container {
+    max-width: 100%;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 1.5rem;
     margin: 2rem 0;
