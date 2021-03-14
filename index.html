@@ -1,261 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour and Travel</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Mulish:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="icon" href="./assets/logo.svg" type="image/svg">
-    <link rel="stylesheet" href="./styles/styles.css">
-</head>
-<body class="flex column">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Mulish:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./assets/logo.svg" type="image/svg" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body class="flex column">
+    <!-- HEADER AND NAVIGATION -->
     <header>
-        <nav class="flex row">
-            <div class="nav-container flex row">
-                <img src="./assets/logo.svg" alt="logo">
-            </div>
-            <div class="nav-container flex row">
-                <a class="cl-xb ft-md nav-link" href="">Home</a>
-                <a class="cl-xl nav-link" href="">Destinations</a>
-                <a class="cl-xl nav-link" href="">About</a>
-                <a class="cl-xl nav-link" href="">Partner</a>
-                <a class="btn-cta login ft-md" href="">Login</a>
-                <a class="btn-cta register ft-md" href="">Register</a>
-            </div>
-        </nav>
+      <nav class="flex row">
+        <div class="nav-container flex row">
+          <img src="./assets/logo.svg" alt="logo" />
+        </div>
+        <div class="nav-container flex row">
+          <a class="cl-xb ft-md nav-link" href="">Home</a>
+          <a class="cl-xl nav-link" href="">Destinations</a>
+          <a class="cl-xl nav-link" href="">About</a>
+          <a class="cl-xl nav-link" href="">Partner</a>
+          <a class="btn-cta login ft-md" href="">Login</a>
+          <a class="btn-cta register ft-md" href="">Register</a>
+        </div>
+      </nav>
     </header>
+
+    <!-- HEADER CONTENT -->
     <main class="flex column">
-        <section class="section one grid">
-            <div class="content-container flex column">
-                <h1 class="ft-playfair cl-xb ft-64">Explore and Travel</h1>
-                <form action="">
-                    <h2 class="ft-inter cl-xb ft-md ft-22">Holiday Finder</h2>
-                    <hr class="hr-one">
-                    <div class="form-control-select grid">
-                        <div class="select-control-styled bd-rd-6">
-                            <i class="fas fa-angle-down cl-bd"></i>
-                            <select class="ft-inter cl-bd ft-16" name="location" id="location">
-                                <option value="" disabled selected>Location</option>
-                            </select>
-                        </div>
-                        <div class="select-control-styled bd-rd-6">
-                            <i class="fas fa-angle-down cl-bd"></i>
-                            <select class="ft-inter cl-bd ft-16"  name="activity" id="activity">
-                                <option value="" disabled selected>Activity</option>
-                            </select>
-                        </div>
-                        <div class="select-control-styled bd-rd-6">
-                            <i class="fas fa-angle-down cl-bd"></i>
-                            <select class="ft-inter cl-bd ft-16"  name="grade" id="grade">
-                                <option value="" disabled selected>Grade</option>
-                            </select>
-                        </div>
-                        <div class="select-control-styled bd-rd-6">
-                            <i class="fas fa-angle-down cl-bd"></i>
-                            <select class="ft-inter cl-bd ft-16"  name="date" id="date">
-                                <option value="" disabled selected>Date</option>
-                            </select>
-                        </div>
-                    </div>
-                    <input class="btn-cta cta register ft-16 ft-bd" type="submit" value="Explore">
-                </form>
+      <!-- INTRODUCTORY SECTION -->
+      <section class="section one grid">
+        <div class="content-container flex column">
+          <h1 class="ft-playfair cl-xb ft-64">Explore and Travel</h1>
+          <form action="">
+            <h2 class="ft-inter cl-xb ft-md ft-22">Holiday Finder</h2>
+            <hr class="hr-one" />
+            <div class="form-control-select grid">
+              <div class="select-control-styled bd-rd-6">
+                <i class="fas fa-angle-down cl-bd"></i>
+                <select
+                  class="ft-inter cl-bd ft-16"
+                  name="location"
+                  id="location"
+                >
+                  <option value="" disabled selected>Location</option>
+                </select>
+              </div>
+              <div class="select-control-styled bd-rd-6">
+                <i class="fas fa-angle-down cl-bd"></i>
+                <select
+                  class="ft-inter cl-bd ft-16"
+                  name="activity"
+                  id="activity"
+                >
+                  <option value="" disabled selected>Activity</option>
+                </select>
+              </div>
+              <div class="select-control-styled bd-rd-6">
+                <i class="fas fa-angle-down cl-bd"></i>
+                <select class="ft-inter cl-bd ft-16" name="grade" id="grade">
+                  <option value="" disabled selected>Grade</option>
+                </select>
+              </div>
+              <div class="select-control-styled bd-rd-6">
+                <i class="fas fa-angle-down cl-bd"></i>
+                <select class="ft-inter cl-bd ft-16" name="date" id="date">
+                  <option value="" disabled selected>Date</option>
+                </select>
+              </div>
             </div>
-            <div class="content-container hero-image flex column">
-                <div class="img-container flex column">
-                    <img src="./assets/herofinder.svg" alt="herofinder">
-                </div>
+            <input
+              class="btn-cta cta register ft-16 ft-bd"
+              type="submit"
+              value="Explore"
+            />
+          </form>
+        </div>
+        <div class="content-container hero-image flex column">
+          <div class="img-container flex column">
+            <img src="./assets/herofinder.svg" alt="herofinder" />
+          </div>
+        </div>
+      </section>
+      <!-- INTRODUCTORY SECTION TWO -->
+      <section class="section two grid">
+        <div class="content-container hero-image flex column">
+          <div class="img-container two flex column">
+            <img src="./assets/herofindertwo.svg" alt="herofindertwo" />
+          </div>
+        </div>
+        <div class="content-container my flex column">
+          <h2 class="ft-playfair cl-xb ft-36">
+            A new way to explore the world
+          </h2>
+          <p class="ft-sm ft-lh-30 cl-sb">
+            For decades travellers have reached for Lonely Planet books when
+            looking to plan and execute their perfect trip, but now, they can
+            also let Lonely Planet Experiences lead the way
+          </p>
+          <form action="">
+            <input
+              class="btn-cta cta register ft-16 ft-bd mx-1"
+              type="submit"
+              value="Learn more"
+            />
+          </form>
+        </div>
+      </section>
+      <!-- SECTION THREE DESTINATIONS -->
+      <section class="section three flex column">
+        <div class="head-content flex row">
+          <h2 class="ft-playfair cl-xb ft-36">Featured destinations</h2>
+          <a class="ft-inter ft-md cl-or"
+            >View all <i class="fas fa-angle-right"></i
+          ></a>
+        </div>
+        <div class="card-container grid">
+          <div class="card-item">
+            <img
+              class="bd-rd-6"
+              src="./assets/rajaampat.svg"
+              alt="Raja Ampat"
+            />
+            <div class="desc-destination">
+              <h3 class="ft-md ft-inter cl-dg ft-18 mx-10">Raja Ampat</h3>
+              <span class="ft-inter cl-md">Indonesia</span>
             </div>
-        </section>
-        <section class="section two grid">
-            <div class="content-container hero-image flex column">
-                <div class="img-container two flex column">
-                    <img src="./assets/herofindertwo.svg" alt="herofindertwo">
-                </div>
+          </div>
+          <div class="card-item">
+            <img
+              class="bd-rd-6"
+              src="./assets/fanjingshan.svg"
+              alt="Fanjingshan"
+            />
+            <div class="desc-destination">
+              <h3 class="ft-md ft-inter cl-dg ft-18 mx-10">Fanjingshan</h3>
+              <span class="ft-inter cl-md">China</span>
             </div>
-            <div class="content-container my flex column">
-                <h2 class="ft-playfair cl-xb ft-36">A new way to explore the world</h2>
-                <p class="ft-sm ft-lh-30 cl-sb">For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect trip, but now, they can also let Lonely Planet Experiences lead the way</p>
-                <form action="">
-                    <input class="btn-cta cta register ft-16 ft-bd mx-1" type="submit" value="Learn more">
-                </form>
+          </div>
+          <div class="card-item">
+            <img class="bd-rd-6" src="./assets/vevey.svg" alt="Vevey" />
+            <div class="desc-destination">
+              <h3 class="ft-md ft-inter cl-dg ft-18 mx-10">Vevey</h3>
+              <span class="ft-inter cl-md">Switzerland</span>
             </div>
-        </section>
-        <section class="section three flex column">
-            <div class="head-content flex row">
-                <h2 class="ft-playfair cl-xb ft-36">Featured destinations</h2>
-                <a class="ft-inter ft-md cl-or">View all <i class="fas fa-angle-right"></i></a>
+          </div>
+          <div class="card-item">
+            <img class="bd-rd-6" src="./assets/skadar.svg" alt="Skadar" />
+            <div class="desc-destination">
+              <h3 class="ft-md ft-inter cl-dg ft-18 mx-10">Skadar</h3>
+              <span class="ft-inter cl-md">Montenegro</span>
             </div>
-            <div class="card-container grid">
-                <div class="card-item">
-                    <img class="bd-rd-6" src="./assets/rajaampat.svg" alt="Raja Ampat">
-                    <div class="desc-destination">
-                        <h3 class="ft-md ft-inter cl-dg ft-18 mx-10">Raja Ampat</h3>
-                        <span class="ft-inter cl-md">Indonesia</span>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <img class="bd-rd-6" src="./assets/fanjingshan.svg" alt="Fanjingshan">
-                    <div class="desc-destination">
-                        <h3 class="ft-md ft-inter cl-dg ft-18 mx-10">Fanjingshan</h3>
-                        <span class="ft-inter cl-md">China</span>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <img class="bd-rd-6" src="./assets/vevey.svg" alt="Vevey">
-                    <div class="desc-destination">
-                        <h3 class="ft-md ft-inter cl-dg ft-18 mx-10">Vevey</h3>
-                        <span class="ft-inter cl-md">Switzerland</span>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <img class="bd-rd-6" src="./assets/skadar.svg" alt="Skadar">
-                    <div class="desc-destination">
-                        <h3 class="ft-md ft-inter cl-dg ft-18 mx-10">Skadar</h3>
-                        <span class="ft-inter cl-md">Montenegro</span>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION FOUR DOWNLOAD -->
+      <section class="section four grid">
+        <div class="content-container m flex column">
+          <h2 class="ft-playfair cl-xb ft-36">Guides by Thousand Sunny</h2>
+          <p class="ft-sm ft-lh-30 cl-sb">
+            Packed with tips and advice from our on-the-ground experts, our city
+            guides app (iOS and Android) is the ultimate resource before and
+            during a trip.
+          </p>
+          <form action="">
+            <input
+              class="btn-cta cta register ft-16 ft-bd mx-1"
+              type="submit"
+              value="Download"
+            />
+          </form>
+        </div>
+        <div class="content-container hero-image flex column">
+          <div class="img-container two flex column">
+            <img src="./assets/herofinderthree.svg" alt="herofinderthree" />
+          </div>
+        </div>
+      </section>
+      <!-- SECTION TESTIMONIALS -->
+      <section class="section five">
+        <h2 class="ft-playfair cl-xb ft-36 my-32">Testimonials</h2>
+        <div class="card-item-container">
+          <div class="myslide testi-card-item grid">
+            <div class="text-content">
+              <img class="starts" src="./assets/stars.svg" alt="Stars" />
+              <p class="ft-24 cl-xb">
+                “Quisque in lacus a urna fermentum euismod. Integer mi nibh,
+                dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit
+                sit amet turpis nec”
+              </p>
+              <h3 class="ft-inter ft-22 cl-xb">Edward Newgate</h3>
+              <span class="ft-inter cl-bd">Founder Circle</span>
             </div>
-        </section>
-        <section class="section four grid">
-            <div class="content-container m flex column">
-                <h2 class="ft-playfair cl-xb ft-36">Guides by Thousand Sunny</h2>
-                <p class="ft-sm ft-lh-30 cl-sb">Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.</p>
-                <form action="">
-                    <input class="btn-cta cta register ft-16 ft-bd mx-1" type="submit" value="Download">
-                </form>
+            <div class="person-picture">
+              <img
+                class="bd-rd-8"
+                src="./assets/edward.svg"
+                alt="Edward Picture"
+              />
             </div>
-            <div class="content-container hero-image flex column">
-                <div class="img-container two flex column">
-                    <img src="./assets/herofinderthree.svg" alt="herofinderthree">
-                </div>
+          </div>
+          <div class="myslide testi-card-item grid">
+            <div class="text-content">
+              <img class="starts" src="./assets/stars.svg" alt="Stars" />
+              <p class="ft-24 cl-xb">
+                “Quisque in lacus a urna fermentum euismod. Integer mi nibh,
+                dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit
+                sit amet turpis nec”
+              </p>
+              <h3 class="ft-inter ft-22 cl-xb">Zitkala Lara</h3>
+              <span class="ft-inter cl-bd">Founder Lara Fashion</span>
             </div>
-        </section>
-        <section class="section five">
-            <h2 class="ft-playfair cl-xb ft-36 my-32">Testimonials</h2>
-            <div class="card-item-container">
-                <div class="myslide testi-card-item grid">
-                    <div class="text-content">
-                        <img class="starts" src="./assets/stars.svg" alt="Stars">
-                        <p class="ft-24 cl-xb">“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”</p>
-                        <h3 class="ft-inter ft-22 cl-xb">Edward Newgate</h3>
-                        <span class="ft-inter cl-bd">Founder Circle</span>
-                    </div>
-                    <div class="person-picture">
-                        <img class="bd-rd-8" src="./assets/edward.svg" alt="Edward Picture">
-                    </div>
-                </div>
-                <div class="myslide testi-card-item grid">
-                    <div class="text-content">
-                        <img class="starts" src="./assets/stars.svg" alt="Stars">
-                        <p class="ft-24 cl-xb">“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”</p>
-                        <h3 class="ft-inter ft-22 cl-xb">Zitkala Lara</h3>
-                        <span class="ft-inter cl-bd">Founder Lara Fashion</span>
-                    </div>
-                    <div class="person-picture">
-                        <img class="bd-rd-8" src="./assets/zitkalaIara.svg" alt="Zitkala Lara">
-                    </div>
-                </div>
-                <div class="btn-control-container flex row">
-                    <a class="prevBtn" ponter-events="none" onclick="prevSlides(-1)" href="javascript:void(0)">
-                        <svg class="btn-move mr" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 25L18 20.5L22 16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="20" cy="20" r="19" transform="rotate(-180 20 20)" stroke-width="2"/>
-                        </svg>
-                    </a>
-                    <a class="nextBtn" onclick="nextSlides(1)" href="javascript:void(0)">
-                        <svg class="btn-move" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18 15L22 19.5L18 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="20" cy="20" r="19" stroke-width="2"/>
-                        </svg>
-                    </a>
-                </div>
+            <div class="person-picture">
+              <img
+                class="bd-rd-8"
+                src="./assets/zitkalaIara.svg"
+                alt="Zitkala Lara"
+              />
             </div>
-        </section>
-        <section class="section six flex column">
-            <div class="head-content flex row">
-                <h2 class="ft-playfair cl-xb ft-36">Trending stories</h2>
-                <a class="ft-inter ft-md cl-or">View all <i class="fas fa-angle-right"></i></a>
+          </div>
+          <div class="btn-control-container flex row">
+            <a
+              class="prevBtn"
+              ponter-events="none"
+              onclick="prevSlides(-1)"
+              href="javascript:void(0)"
+            >
+              <svg
+                class="btn-move mr"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 25L18 20.5L22 16"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="19"
+                  transform="rotate(-180 20 20)"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+            <a
+              class="nextBtn"
+              onclick="nextSlides(1)"
+              href="javascript:void(0)"
+            >
+              <svg
+                class="btn-move"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 15L22 19.5L18 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle cx="20" cy="20" r="19" stroke-width="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- BLOGS SECTION -->
+      <section class="section six flex column">
+        <div class="head-content flex row">
+          <h2 class="ft-playfair cl-xb ft-36">Trending stories</h2>
+          <a class="ft-inter ft-md cl-or"
+            >View all <i class="fas fa-angle-right"></i
+          ></a>
+        </div>
+        <div class="card-container blog grid">
+          <div class="card-item flex column">
+            <img class="img-blog" src="./assets/blogone.svg" alt="Blog One" />
+            <div class="desc-blog flex column">
+              <h3 class="ft-inter cl-xb ft-18 mb-0">
+                The many benefits of taking a healing holiday
+              </h3>
+              <p class="ft-inter cl-sb">
+                ‘Helaing holidays’ are on the rise tohelp maximise your health
+                and happines...
+              </p>
+              <a class="ft-inter cl-or ft-md" href="javascript:void(0)"
+                >Read more</a
+              >
             </div>
-            <div class="card-container blog grid">
-                <div class="card-item flex column">
-                    <img class="img-blog" src="./assets/blogone.svg" alt="Blog One">
-                    <div class="desc-blog flex column">
-                        <h3 class="ft-inter cl-xb ft-18 mb-0">The many benefits of taking a healing holiday</h3>
-                        <p class="ft-inter cl-sb">‘Helaing holidays’ are on the rise tohelp maximise your health and happines...</p>
-                        <a class="ft-inter cl-or ft-md" href="javascript:void(0)">Read more</a>
-                    </div>
-                </div>
-                <div class="card-item flex column">
-                    <img class="img-blog" src="./assets/blogtwo.svg" alt="Blog One">
-                    <div class="desc-blog flex column">
-                        <h3 class="ft-inter cl-xb ft-18 mb-0">The best Kyoto restaurant to try Japanese food</h3>
-                        <p class="ft-inter cl-sb">From tofu to teahouses, here’s our guide to Kyoto’s best restaurants to visit...</p>
-                        <a class="ft-inter cl-or ft-md" href="javascript:void(0)">Read more</a>
-                    </div>
-                </div>
-                <div class="card-item flex column">
-                    <img class="img-blog" src="./assets/blogthree.svg" alt="Blog One">
-                    <div class="desc-blog flex column">
-                        <h3 class="ft-inter cl-xb ft-18 mb-0">Skip Chichen Itza and head to this remote Yucatan</h3>
-                        <p class="ft-inter cl-sb">It’s remote and challenging to get, but braving the jungle and exploring these ruins without the...</p>
-                        <a class="ft-inter cl-or ft-md" href="javascript:void(0)">Read more</a>
-                    </div>
-                </div>
-                <div class="card-item flex column">
-                    <img class="img-blog" src="./assets/blogfour.svg" alt="Blog One">
-                    <div class="desc-blog flex column">
-                        <h3 class="ft-inter cl-xb ft-18 mb-0">Surf’s up at these beginner spots around the world</h3>
-                        <p class="ft-inter cl-sb">If learning to surf has in on your to-do list for a while, the good news is: it’s never too late...</p>
-                        <a class="ft-inter cl-or ft-md" href="javascript:void(0)">Read more</a>
-                    </div>
-                </div>
+          </div>
+          <div class="card-item flex column">
+            <img class="img-blog" src="./assets/blogtwo.svg" alt="Blog One" />
+            <div class="desc-blog flex column">
+              <h3 class="ft-inter cl-xb ft-18 mb-0">
+                The best Kyoto restaurant to try Japanese food
+              </h3>
+              <p class="ft-inter cl-sb">
+                From tofu to teahouses, here’s our guide to Kyoto’s best
+                restaurants to visit...
+              </p>
+              <a class="ft-inter cl-or ft-md" href="javascript:void(0)"
+                >Read more</a
+              >
             </div>
-        </section>
+          </div>
+          <div class="card-item flex column">
+            <img class="img-blog" src="./assets/blogthree.svg" alt="Blog One" />
+            <div class="desc-blog flex column">
+              <h3 class="ft-inter cl-xb ft-18 mb-0">
+                Skip Chichen Itza and head to this remote Yucatan
+              </h3>
+              <p class="ft-inter cl-sb">
+                It’s remote and challenging to get, but braving the jungle and
+                exploring these ruins without the...
+              </p>
+              <a class="ft-inter cl-or ft-md" href="javascript:void(0)"
+                >Read more</a
+              >
+            </div>
+          </div>
+          <div class="card-item flex column">
+            <img class="img-blog" src="./assets/blogfour.svg" alt="Blog One" />
+            <div class="desc-blog flex column">
+              <h3 class="ft-inter cl-xb ft-18 mb-0">
+                Surf’s up at these beginner spots around the world
+              </h3>
+              <p class="ft-inter cl-sb">
+                If learning to surf has in on your to-do list for a while, the
+                good news is: it’s never too late...
+              </p>
+              <a class="ft-inter cl-or ft-md" href="javascript:void(0)"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- FOOTER WEBSITE -->
     <footer class="flex column">
-        <div class="grid footer">
-            <div class="flex column footer-child-one">
-                <img src="./assets/logo.svg" alt="logo">
-                <p class="ft-lg cl-rg">Plan and book your perfect trip with expert advice, travel tips destination information from us</p>
-                <span class="ft-lg cl-rg">©2020 Thousand Sunny. All rights reserved</span>
-            </div>
-            <div class="flex column">
-                <h4 class="cl-xb my-1">Destinations</h4>
-                <span class="ft-lg cl-rg my-1">Africa</span>
-                <span class="ft-lg cl-rg my-1">Antarctica</span>
-                <span class="ft-lg cl-rg my-1">Asia</span>
-                <span class="ft-lg cl-rg my-1">Europe</span>
-                <span class="ft-lg cl-rg my-1">America</span>
-            </div>
-            <div class="flex column">
-                <h4 class="cl-xb my-1">Shop</h4>
-                <span class="ft-lg cl-rg my-1">Destination Guides</span>
-                <span class="ft-lg cl-rg my-1">Pictorial & Gifts</span>
-                <span class="ft-lg cl-rg my-1">Special Offers</span>
-                <span class="ft-lg cl-rg my-1">Delivery Times</span>
-                <span class="ft-lg cl-rg my-1">FAQs</span>
-            </div>
-            <div class="flex column">
-                <h4 class="cl-xb my-1">Interests</h4>
-                <span class="ft-lg cl-rg my-1">Adventure Travel</span>
-                <span class="ft-lg cl-rg my-1">Art And Culture</span>
-                <span class="ft-lg cl-rg my-1">Wildlife And Nature</span>
-                <span class="ft-lg cl-rg my-1">Family Holidays</span>
-                <span class="ft-lg cl-rg my-1">Food And Drink</span>
-            </div>
+      <div class="grid footer">
+        <div class="flex column footer-child-one">
+          <img src="./assets/logo.svg" alt="logo" />
+          <p class="ft-lg cl-rg">
+            Plan and book your perfect trip with expert advice, travel tips
+            destination information from us
+          </p>
+          <span class="ft-lg cl-rg"
+            >©2020 Thousand Sunny. All rights reserved</span
+          >
         </div>
-        <hr>
-        <div class="flex row icon-social-footer">
-            <a href=""><i class="fab fa-twitter ft-24 cl-xb"></i></a>
-            <a href=""><i class="fab fa-facebook-f ft-24 cl-xb"></i></a>
-            <a href=""><i class="fab fa-instagram ft-24 cl-xb"></i></a>
-            <a href=""><i class="fab fa-linkedin-in ft-24 cl-xb"></i></a>
-            <a href=""><i class="fab fa-youtube ft-24 cl-xb"></i></a>
+        <div class="flex column">
+          <h4 class="cl-xb my-1">Destinations</h4>
+          <span class="ft-lg cl-rg my-1">Africa</span>
+          <span class="ft-lg cl-rg my-1">Antarctica</span>
+          <span class="ft-lg cl-rg my-1">Asia</span>
+          <span class="ft-lg cl-rg my-1">Europe</span>
+          <span class="ft-lg cl-rg my-1">America</span>
         </div>
+        <div class="flex column">
+          <h4 class="cl-xb my-1">Shop</h4>
+          <span class="ft-lg cl-rg my-1">Destination Guides</span>
+          <span class="ft-lg cl-rg my-1">Pictorial & Gifts</span>
+          <span class="ft-lg cl-rg my-1">Special Offers</span>
+          <span class="ft-lg cl-rg my-1">Delivery Times</span>
+          <span class="ft-lg cl-rg my-1">FAQs</span>
+        </div>
+        <div class="flex column">
+          <h4 class="cl-xb my-1">Interests</h4>
+          <span class="ft-lg cl-rg my-1">Adventure Travel</span>
+          <span class="ft-lg cl-rg my-1">Art And Culture</span>
+          <span class="ft-lg cl-rg my-1">Wildlife And Nature</span>
+          <span class="ft-lg cl-rg my-1">Family Holidays</span>
+          <span class="ft-lg cl-rg my-1">Food And Drink</span>
+        </div>
+      </div>
+      <hr />
+      <div class="flex row icon-social-footer">
+        <a href=""><i class="fab fa-twitter ft-24 cl-xb"></i></a>
+        <a href=""><i class="fab fa-facebook-f ft-24 cl-xb"></i></a>
+        <a href=""><i class="fab fa-instagram ft-24 cl-xb"></i></a>
+        <a href=""><i class="fab fa-linkedin-in ft-24 cl-xb"></i></a>
+        <a href=""><i class="fab fa-youtube ft-24 cl-xb"></i></a>
+      </div>
     </footer>
     <script src="./javascripts/main.js"></script>
-</body>
+  </body>
 </html>
