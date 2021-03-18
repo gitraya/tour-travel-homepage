@@ -1,5 +1,5 @@
 <h1 align="center">Tour & Travel Homepage</h1>
-<h2 align="center">This page is only available on laptop screens and above</h2>
+<h2 align="center">This page is only responsive on laptop screens and above</h2>
 
 
 ## Table of Contents
